@@ -1,85 +1,27 @@
-# CRUD-Api-Project-CSC340
+Crud-Api
+we have begun to practice building restful CRUD APIs
 
-{
-  "name": "Blue Jay",
-  "scientificName": "Cyanocitta cristata",
-  "species": "Bird",
-  "habitat": "Forests",
-  "description": "A blue bird with a crest."
-}
+the api Endpoints
+We went ahead and used postman to locate the end points 
 
+@Get list of Animals
 
-{
-    "name": "Bald Eagle",
-    "scientificName": "Haliaeetus leucocephalus",
-    "species": "Bird",
-    "habitat": "Forests and wetlands",
-    "description": "The bald eagle is a bird of prey found in North America."
-}
+@Get a specific animal
+Request
+'Get /api/animals/4'
 
-{
-        "animalID": 1,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 2,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 102,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 103,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 152,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 202,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 252,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    },
-    {
-        "animalID": 302,
-        "name": "Bald Eagle",
-        "scientificName": "Haliaeetus leucocephalus",
-        "species": "Bird",
-        "habitat": "Forests and wetlands",
-        "description": "The bald eagle is a bird of prey found in North America."
-    }
-]
+we can begin creating a new Animal
+Creating an animla with the given scientific name
+
+Updating an existing animal
+Request
+
+using @Delete an animal
+Request
+'Delete /api/animals/{id}'
+
+using @Get all animal of a given species
+
+We have now replaced the @ResController with @Controller for the local host 
+Did this becuase we are no longer geeting the request from postman but now goin on a local browser
 
