@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Update</title>
+</head>
+<body>
+<h1>Update Animal</h1>
+<form action="/animals/update" method="post">
+    <label for="id"> ID: </label><br>
+    <label type="text" class="form-control" id="id" name="id" data-th-value="${animal.animalID}" readonly /><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" data-th-value="${animal.name}" required />
+    <label for="scientificName">Sciencetific Animal Name: </label>
+    <input type="text" id="scientificName" name="scientificName" data-th-value="${animal.scientificName}" />
+    <label for="species">Species: </label>
+    <input type="text" id="species" name="species" data-th-value="${animal.species}" required />
+    <label for="habitat"> Habitat:</label>
+    <input type="text" id="habitat" name="habitat" data-th-value="${animal.habitat}" required />
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description" data-th-value="${animal.description}" required />
+    <button type="Submit">Update</button>
+</form>
+
+<a href="animals/all">Back to List</a>
+</body>
+</html>

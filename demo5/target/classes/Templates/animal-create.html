@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Animal</title>
+</head>
+<body>
+<h1>Create An Animal</h1>
+<form action="#" th:action="@{/animals/new/add}" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" required />
+    <label>Scientific Name</label>
+    <input type="text" name="scientificName" />
+    <label>Species:</label>
+    <input type="text" name="species" required />
+    <label>Habitat:</label>
+    <input type="text" name="habitat" required />
+    <label>DescriptionL</label>
+    <textarea name="description"></textarea>
+    <button type="submit">Create</button>
+</form>
+<a href="/animals/all">Back to List</a>
+
+</body>
+</html>

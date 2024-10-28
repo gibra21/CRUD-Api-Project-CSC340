@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Animal List</title>
+</head>
+<body>
+
+<h1><a data-th-href="@{/animals/all}">Animals</a></h1>
+<Form action="/animals/search">
+  <input type="text"name="name"placeholder="Search">
+</Form>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Species</th>
+    <th>Actions</th>
+  </tr>
+  <tr th:each="animal : ${animalList}">
+    <td data-th-text="${animal.animalId}"></td>
+    <td data-th-text="${animal.name}"></td>
+    <td data-th-text="${animal.species}"></td>
+    <td>
+      <a th:href="@{/animals/{id}(id=${animal.animalId}">Details</a>
+      <a th:href="@{/animals/updateForm/{id}(id=${animal.animalId})}">Edit</a>
+      <a th:href="@{/animals/delete/{id}(id=${animal.animalId})}">Delete</a>
+    </td>
+
+
+
+  </tr>
+</table>
+<a href="/animals/new">Create New Animal</a>
+<br>
+<a data-th-href="@{/animals/all}">Back to list</a>
+</body>
+</html>

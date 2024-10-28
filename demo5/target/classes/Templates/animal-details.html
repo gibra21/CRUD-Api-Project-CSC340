@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Details</title>
+</head>
+<body>
+<h1 data-th-text="${animal.name}"></h1>
+<p>Animal ID: <span data-th-text="${animalId}"></span></p>
+<p>Scientific Name <span data-th-text="${animal.scientificName}"></span></p>
+<p>Species: <span data-th-text="${animal.species}"></span></p>
+<p>Habitat: <span data-th-text="${animal.habitat}"></span></p>
+<p>Description: <span data-th-text="${animal.description}"></span></p>
+<a href="/animals/all">Back to List</a>
+
+</body>
+</html>
